@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Restaurants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>NYC Restaurant Inspection Explorer</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="filter.html">Filter Data</a>
+        <a href="analysis.html">Analysis</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Restaurant Inspection Results</h2>
+
+    <label for="boroughFilter">Filter by Borough:</label>
+
+<select id="boroughFilter" onchange="ByBorough()">
+
+    <option value="All">All</option>
+    <option value="Manhattan">Manhattan</option>
+    <option value="Brooklyn">Brooklyn</option>
+    <option value="Queens">Queens</option>
+    <option value="Bronx">Bronx</option>
+    <option value="Staten Island">Staten Island</option>
+
+</select>
+    <div id="cardContainer"></div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
