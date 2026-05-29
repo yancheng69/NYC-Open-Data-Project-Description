@@ -1,84 +1,47 @@
-html,body{
-  margin:0 auto;
-  font-family:Arial;
-}
-.container{
-  display:flex;
-  padding:10px;
-}
-.center{
-  justify-content:center;
-  align-items:center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-nav{
-  background-color:cornflowerblue;
-}
-nav a{
-  color:black;
-  padding:10px;
-  flex:1;
-  text-decoration:none;
-  text-align:center;
-}
-nav a:hover{
-  color:white;
-}
-.subbanner{
-  background-color:cornflowerblue;
-}
-#banner{
-  background-color:blue;
-  color:white;
-}
-#footer{
-  background-color:cornflowerblue;
-  color:white;
-  /*position:fixed;*/
-  left: 0;
-  right: 0;
-  bottom:0px;
-}
- 
-.card{
-  flex:1;
-  margin:10px;
-  padding:10px;
-  border:1px solid gray;
-  text-align:center;
-  box-shadow:2px 2px 2px black;
-  border-radius:2px;
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.highlight{
-  font-style:italic;
-  color:blue;
+nav {
+    margin-top: 10px;
 }
-.heading{
-  font-weight:bold;
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
 }
-.button{
-  text-decoration:none;
-  background-color:blue;
-  color:white;
-  border-radius:4px;
-  padding:6px;
-  box-shadow:2px 2px 2px black;
+
+main {
+    padding: 20px;
 }
-.button:hover{
-  background-color:cornflowerblue;
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.flex-1{
-  flex:1;
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
 }
-.fitted{
-  max-width:200px;
-  min-width:200px;
-}
-.card img{
-  height:100px;
-}
-#output{
-  display:flex;
-  flex-wrap:wrap;
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
 }

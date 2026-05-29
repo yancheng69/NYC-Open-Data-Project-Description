@@ -13,4 +13,3 @@ let link = "311.json"
 
     displayCards(data);
 }
-
