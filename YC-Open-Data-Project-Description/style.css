@@ -1,47 +1,121 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 header {
-    background-color: darkblue;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
+}
+
+.intro {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 5px 20px 5px;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: none;
+}
+
+.intro h2 {
+  margin-top: 20px;
+}
+
+.intro p {
+  max-width: 950px;
+  font-size: 18px;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-    background-color: white;
-    width: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px gray;
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.filter-box {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.filter-box label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+select,
+input {
+  padding: 8px;
+  margin: 5px 15px 5px 0;
+}
+
+.chart-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+#boroughFinding,
+#gradeFinding {
+  font-weight: bold;
+  background-color: #eef3ff;
+  padding: 10px;
+  border-left: 5px solid darkblue;
 }
 
 button {
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  nav a {
+    display: block;
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  select,
+  input {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
 }

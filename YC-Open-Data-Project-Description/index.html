@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Open Data Project</title>
-    <link rel="stylesheet" href="style.css">
+  <title>NYC Restaurant Inspection Explorer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>NYC Restaurant Inspection Explorer</h1>
+<header>
+  <h1>NYC Restaurant Inspection Explorer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="filter.html">Filter Data</a>
+    <a href="analysis.html">Analysis</a>
+  </nav>
+</header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="filter.html">Filter Data</a>
-            <a href="analysis.html">Analysis</a>
-        </nav>
-    </header>
-            <h2>About This Project</h2>
+<main>
+  <section class="intro">
+    <h2>About This Project</h2>
+    <p>
+      This project uses the DOHMH New York City Restaurant Inspection Results dataset from NYC Open Data.
+      The dataset includes information about restaurant inspections, boroughs, cuisine types, inspection
+      grades, scores, violations, and inspection dates.
+    </p>
 
-            <p>
-                This project uses NYC Open Data restaurant inspection results
-                to explore food safety trends in New York City.
-            </p>
+    <h2>Agency Background</h2>
+    <p>
+      The data is provided by the New York City Department of Health and Mental Hygiene, also called DOHMH.
+      DOHMH helps protect public health in New York City, including inspecting restaurants and food service
+      establishments.
+    </p>
 
-            <p>
-                Users can filter restaurant inspection records and view
-                charts showing borough inspection statistics.
-            </p>
+    <h2>Why This Dataset Matters</h2>
+    <p>
+      Restaurant inspection data is important because it helps people understand food safety conditions in
+      different parts of New York City. This website makes the data easier to view, filter, and analyze.
+    </p>
+
+    <h2>Website Sections</h2>
+    <p>
+      The Filter Data page lets users view restaurant inspection records as cards and filter them by borough,
+      grade, and restaurant name. The Analysis page uses charts to compare inspection results by borough and
+      grade.
+    </p>
+  </section>
+</main>
+
 </body>
 </html>
